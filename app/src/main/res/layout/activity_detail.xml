@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YoutubeDark"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="260dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:text="Venom"
+        android:textColor="@color/YoutubeRed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/langauge"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/divider3"
+        android:layout_marginVertical="260dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:text="language"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="510dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="205dp"
+        android:numStars="10"
+        android:rating="8.2"
+        android:theme="@style/RatingBar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginVertical="350dp">
+
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="Grab the context from the calling activity (eg. this or MainActivity.this) and pass it into the method your Toast resides in. That way it lives together with the calling activity.  Application context, which you get from getApplicationContext() and getContext() is mainly for long running processes. Using it for short lived processes can lead to uyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyhh niguvyc ygcyt ty yt t ytgfti u fi t it t cy ttcyyctycyycycyr y y  "
+            android:textColor="@android:color/white" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginVertical="250dp"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="1dp"
+        android:layout_height="93dp"
+        android:layout_marginHorizontal="260dp"
+        android:layout_marginVertical="252dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/Gray" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="345dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/Gray"/>
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="500dp"
+        android:backgroundTint="@color/Gray"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/VoteAvg"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="512dp"
+        android:layout_marginEnd="30dp"
+        android:text="5.7"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/divider3"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="305dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:text="11-25-2019"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="194dp"
+        android:backgroundTint="@color/Gray"
+        android:layout_alignParentRight="true"
+        android:layout_height="1dp"
+        android:layout_marginVertical="297dp"
+
+        android:background="?android:attr/listDivider" />
+</RelativeLayout>

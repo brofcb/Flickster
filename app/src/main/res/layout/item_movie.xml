@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YoutubeDark">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/YoutubeRed"
+        android:textColorLink="@android:color/white"
+        android:textSize="24sp"
+        tools:text="A Star is Born" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        tools:text="Start by reviewing common issues on our discussion system. Below is a list of useful notes you may find helps save you time while developing the Flicks client or running into problems:" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible" />
+</RelativeLayout>
